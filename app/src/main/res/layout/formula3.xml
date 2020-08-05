@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/formula1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#FFFFFF">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <!-- add math formulas using MathJax-->
+    <io.github.sidvenu.mathjaxview.MathJaxView
+        android:id="@+id/formula1Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:background="#FFFFFF"
+
+        />
+
+
+    <TextView
+        android:id="@+id/Na"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/formula1Text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/na_mmol_l"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/NaIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formula1Text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Na"
+        android:layout_toRightOf="@+id/Na"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_na"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/K"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Na"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/k_mmol_l"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/KIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NaIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/K"
+        android:layout_toRightOf="@+id/K"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_k"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Mg"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/K"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/mg_mmol_l"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/MgIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Mg"
+        android:layout_toRightOf="@+id/Mg"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_mg"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Cl"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Mg"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/cl_mmol_l"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/ClIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MgIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Cl"
+        android:layout_toRightOf="@+id/Cl"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_cl"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Ca"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Cl"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/ca_mmol_l"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/CaIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Ca"
+        android:layout_toRightOf="@+id/Ca"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_ca"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Lact"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Ca"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/lactate_mmol_l"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/LactIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CaIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Lact"
+        android:layout_toRightOf="@+id/Lact"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_lactate"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#1DE9B6"
+        android:shadowColor="#1DE9B6"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#1DE9B6"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/SID"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/strong_ion_difference"
+        android:textColor="#1DE9B6" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/SID"
+        android:layout_toRightOf="@id/SID"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textColor="#7C7C7C" />
+
+
+</RelativeLayout>
+</ScrollView>

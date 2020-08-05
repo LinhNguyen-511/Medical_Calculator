@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/formula1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#FFFFFF">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <!-- add math formulas using MathJax-->
+    <io.github.sidvenu.mathjaxview.MathJaxView
+        android:id="@+id/formula1Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/toolBar"
+        />
+
+
+    <TextView
+        android:id="@+id/Na"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/formula1Text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Na (mmol/l)"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/NaIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formula1Text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Na"
+        android:layout_toRightOf="@+id/Na"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Na"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/K"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Na"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="K (mmol/l)"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/KIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NaIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/K"
+        android:layout_toRightOf="@+id/K"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter K"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Bic"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/K"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Bicarbonate (mmol/l)"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/BicIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Bic"
+        android:layout_toRightOf="@+id/Bic"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Bicarbonate"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Cl"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Bic"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Cl (mmol/l)"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/ClIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BicIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Cl"
+        android:layout_toRightOf="@+id/Cl"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Cl"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/Alb"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Cl"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Albumin (g/l)"
+        android:textColor="#1DE9B6" />
+
+    <EditText
+        android:id="@+id/AlbIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClIn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/Alb"
+        android:layout_toRightOf="@+id/Alb"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Albumin"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Alb"
+        android:layout_centerHorizontal="true"
+
+        android:background="#1DE9B6"
+        android:shadowColor="#1DE9B6"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#1DE9B6"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/Aniongap"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Aniongap"
+        android:textColor="#1DE9B6" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/Aniongap"
+        android:layout_toRightOf="@id/Aniongap"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textColor="#7C7C7C" />
+
+
+</RelativeLayout>

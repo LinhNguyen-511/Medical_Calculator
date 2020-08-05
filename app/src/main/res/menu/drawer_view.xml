@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/f1"
+            android:title="Body Surface Area" />
+        <item
+            android:id="@+id/f2"
+            android:title="Aniongap (corrected for albumin)" />
+        <item
+            android:id="@+id/f3"
+            android:title="Strong ion difference" />
+        <item
+            android:id="@+id/f4"
+            android:title="Calculated osmolarity" />
+        <item
+            android:id="@+id/f5"
+            android:title="Creatine clearance" />
+        <item
+            android:id="@+id/f6"
+            android:title="Correction total calcium concentration for albumin" />
+        <item
+            android:id="@+id/f7"
+            android:title="Fractional sodium excretion" />
+        <item
+            android:id="@+id/f8"
+            android:title="Fractional ureum excretion" />
+        <item
+            android:id="@+id/f9"
+            android:title="Serum Sodium correction for glucose concentration" />
+        <item
+            android:id="@+id/f10"
+            android:title="BMI" />
+
+    </group>
+</menu>

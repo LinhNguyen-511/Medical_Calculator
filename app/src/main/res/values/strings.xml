@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Medical Calculator</string>
+    <string name="formula">Formula</string>
+    <string name="enter_height">Enter Height</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="body_surface_area">Body surface area</string>
+    <string name="result">Result</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="rr_msec">RR (msec)</string>
+    <string name="qt_msec">QT (msec)</string>
+    <string name="calculate">Calculate</string>
+    <string name="qtc_msec">QTC (msec)</string>
+    <string name="enter_qt">Enter QT</string>
+    <string name="enter_rr">Enter RR</string>
+    <string name="qtc">QTC</string>
+    <string name="first_child">first_child</string>
+    <string name="second_child">first_child</string>
+    <!-- create an array of formula layouts, used in MainActivity to switch -->
+    <string-array name="formulas">
+        <item>Formula 1</item>
+        <item>Formula 2</item>
+    </string-array>
+    <string name="title_activity_f1">f1</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="logo">logo</string>
+    <string name="enter_bicarbonate">Enter Bicarbonate</string>
+    <string name="bicarbonate_mmol_l">Bicarbonate (mmol/l)</string>
+    <string name="enter_k">Enter K</string>
+    <string name="k_mmol_l">K (mmol/l)</string>
+    <string name="enter_na">Enter Na</string>
+    <string name="na_mmol_l">Na (mmol/l)</string>
+    <string name="cl_mmol_l">Cl (mmol/l)</string>
+    <string name="enter_cl">Enter Cl</string>
+    <string name="albumin_g_l">Albumin (g/l)</string>
+    <string name="enter_albumin">Enter Albumin</string>
+    <string name="aniongap">Aniongap</string>
+
+    <string name="enter_mg">Enter Mg</string>
+    <string name="mg_mmol_l">Mg (mmol/l)</string>
+
+
+    <string name="ca_mmol_l">Ca (mmol/l)</string>
+    <string name="enter_ca">Enter Ca</string>
+    <string name="lactate_mmol_l">Lactate (mmol/l)</string>
+    <string name="enter_lactate">Enter Lactate</string>
+    <string name="strong_ion_difference">Strong Ion Difference</string>
+    <string name="bmi">BMI</string>
+</resources>
